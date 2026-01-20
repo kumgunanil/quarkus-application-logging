@@ -29,11 +29,15 @@ public class Resource {
         LOG.debug("Response::openAccount() Account " + alreadyExist);
         if (alreadyExist) {
             LOG.info("Returning from Resource::openAccount()");
-            return Response.ok("Oops! Account already Exist" + "anil part2").build();
+            return Response.ok("Oops! Account already Exist").build();
+            LOG.info("Returning from Resource::openAccount()");
+            return Response.ok("Subscription added to anil part2").build();
         }else {
             LOG.info("Returning from Resource::openAccount()");
-            return Response.ok("Thanks for opening account......" + "anil part3")
-            .build();
+            return Response.ok("Thanks for opening account......").build();
+
+            LOG.info("Returning from Resource::openAccount()");
+            return Response.ok("Subscription added to anil part3").build();
         }
     }
 }
