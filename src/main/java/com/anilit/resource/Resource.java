@@ -23,15 +23,15 @@ public class Resource {
     @Path("open_account")
     public Response openAccount(@RequestBody Account account) {
         LOG.info("Entering in Response::openAccount()");
-        LOG.debug("Response::openAccount() Account " + account);
+        LOG.debug("Response::openAccount() Account anil part1 " + account);
 
         boolean alreadyExist = accountService.isAccountAlreadyExist(account);
         LOG.debug("Response::openAccount() Account " + alreadyExist);
         if (alreadyExist) {
-            LOG.info("Returning from Resource::openAccount()");
+            LOG.info("Returning from Resource::openAccount() anilpart 2");
             return Response.ok("Oops! Account already Exist").build();
         }else {
-            LOG.info("Returning from Resource::openAccount()");
+            LOG.info("Returning from Resource::openAccount() anil part3");
             return Response.ok("Thanks for opening account......").build();
         }
     }
