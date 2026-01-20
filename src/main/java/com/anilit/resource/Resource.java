@@ -30,9 +30,14 @@ public class Resource {
         if (alreadyExist) {
             LOG.info("Returning from Resource::openAccount()");
             return Response.ok("Oops! Account already Exist").build();
+            LOG.info("Returning from Resource::openAccount()");
+            return Response.ok("Subscription added to anil part2").build();
         }else {
             LOG.info("Returning from Resource::openAccount()");
             return Response.ok("Thanks for opening account......").build();
+
+            LOG.info("Returning from Resource::openAccount()");
+            return Response.ok("Subscription added to anil part3").build();
         }
     }
 }
